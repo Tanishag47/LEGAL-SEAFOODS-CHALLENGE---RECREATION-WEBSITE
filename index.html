@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Legal Seafoods</title>
+</head>
+    <body id="container">
+        <header>
+                <a href="index.html"><img id="logo" src="./IMAGES/LSF LOGO.webp"></a>
+                <h1 class="sr-only">Legal Seafoods</h1>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="#about">Our story</a></li>
+                        <li><a href="#cuisine">Cuisine</a></li>
+                        <li><a href="#formValid">Get In Touch</a></li>
+                    </ul>
+                </nav>
+        </header>
+        <main>
+            <section>
+                <h2 class="slogan">"IF IT ISN'T <span>FRESH...</span> IT ISN'T <span>LEGAL</span>"</h2>
+                <img id="header_img" src="./IMAGES/DISHES ON TABLE.jpg" alt="Photo of a variety of dishes served at legal seafoods">
+            </section>
+
+            <section id="about">
+                <div class="abouth2">
+                    <h3>Founded in 1950 as a family fish market just outside of Boston,<br> we are woven into the fabric and history of New England. <br>With pride we serve our comminity, and beyond.</h2>
+                </div>
+                <div id="sidebyside">
+                    <img id="about_img" src="./IMAGES/WOMAN EATING LOBSTER.jpg" alt="Photo of a local fisherman with a giant fish on a boat">
+                    <ul>
+                        <li><strong>New England Bred:</strong> rooted in the region’s rich fishing traditions.</li>
+                        <li><strong>We're built on quality:</strong> with a commitment to the freshest, highest-standard seafood.</li>
+                        <li><strong>From a local brand to a global presence:</strong> while staying true to our New England identity.</li>
+                        <li><strong>Freshness is our promise:</strong> from the quality of the catch, to the deliciousness of the meal.</li>
+                        <li><strong>Focused on sustainability and innovation:</strong> envisioning a better future for oceans and communities.</li>
+                        <li><strong>Best of the catch:</strong> we prioritize only serving the best of the best, caught daily here in New England.</li>
+                    </ul>
+
+                </div>  
+            </section>
+
+            <section id="cuisine">
+                <section id="switcher">
+                    <h2>New England Classics served right on the Boston Harbor</h2>                    
+                    <section id="product1"  class="currentItem">
+                        <h3>Baked Stuffed Lobster</h3>
+                        <p>A Tourist favorite, this dish is seeked by hungry people globally.<br>An almost 2lb lobster - baked to perfection - stuffed with shrimp, scallops and Ritz cracker buttery goodness. </p>
+                        <img src="./IMAGES/BAKEDSTUFFED LOB.jpeg" alt="a baked stuffed lobster with a ramikan of draw butter and a side of asparagus">
+                        
+                    </section>
+
+                    <section id="product2"  class="hiddenItem">
+                        <h3>New England Clam Chowder</h3>
+                        <img src="./IMAGES/CHOWDER 2.jpeg" alt="a bow of new england clam chowder with an oyster cracker topping">
+                        
+                        <p>Our classic award winning recipe. Our thick and creamy clam chowder is packed with tender clams, hearty potatoes, salted pork and onions. Served at almost every presidention inauguration since 1981.</p>  
+                    </section>
+
+                    <section id="product3" class="hiddenItem">
+                        <h3>Cod Salt + Vinegar</h3>
+                        <p>Crispy Icelandic-style cod served with golden potato wedges, smoky napa cabbage and bacon slaw, and a tangy remoulade for a bold, balanced finish.</p>
+                        <img src="./IMAGES/COD SALT AND VINE.jpeg" alt="Crispy Icelandic-style cod served with golden potato wedges, smoky napa cabbage and bacon slaw, and a tangy remoulade for a bold, balanced finish.">
+                        
+                    </section>
+
+                    <section id="product4"  class="hiddenItem">
+                        <h3>Shellfish Tower + Raw Bar</h3>
+                        <img src="./IMAGES/SHELL FISH TOWER.webp" alt="a shellfish tower for six on a wooden table with a side of lobster crackers on the side">
+                        <p>With our commitment to freshness, our shellfish tower comes with the best pick of local oysters, clams, little necks, chilled lobster tails and more. </p>
+                    </section>
+
+                    <section id="switcherButtons">
+                        <h2 class="sr-only">Click on a Button to View a Product</h2>
+                        <button id="btn1">Baked Stuffed Lobster</button>
+                        <button id="btn2">New England Clam Chowder</button>
+                        <button id="btn3">Cod Salt + Vinegar</button>
+                        <button id="btn4">Shellfish Tower</button>
+                    </section>
+                </section>
+            </section>    
+
+            <section id="game">
+                <div>
+                    <h2>PLAY TO WIN A FREE <span class="white"> LOBSTER </span> ROLL</h2>
+                    <img src="./IMAGES/LOBSTER ROLL.avif" alt="A new england traditional lobster roll">
+                </div>
+                
+
+                <div class="howToPlay">
+                    <p>HOW TO PLAY:</p>
+                    <ol>
+                        <li>Enter a number between 1 & 10</li>
+                        <li>If your number matches the generated number, YOU WIN!</li>
+                    </ol>
+
+                    
+                    <label>Choose Your Number: </label>
+                    <input name="guessNum" id="guessNum">
+                    <button type="submit" id="submitButton">GUESS TO WIN!</button>
+                    <p id="invalidNum">Please enter a number between 1 and 10</p>
+                    <p id="randomNumGenerated"></p>
+                    <p id="winner">CONGRATS! YOU GET A FREE LOBSTER ROLL!</p>
+                    <p id="loser">Sorry the number doesnt match. Try again!</p>
+                </div>
+                
+            </section>
+
+            <section id="formValid">
+                <div id="formText">
+                    <h2 class="h2form">Contact Us</h2>
+                    <h3 class="h3form">Looking to get in touch ?</h3>
+                    <p class="pform">SEND US A MESSAGE!</p>
+                    <img src="./IMAGES/red arrow.png" alt="red arrow facing game area">
+
+                </div>
+               
+                <form id="form">
+                    <p>
+                        <label for="firstName">First name:</label>
+                        <span id="firstNameError" class="error">Please enter your first name</span>
+                        <input name="firstName" id="firstName" type="text" >
+                    </p>
+                    
+                    <p>
+                        <label for="lastName">Last name:</label>
+                        <span id="lastNameError" class="error">Please enter your last name</span>
+                        <input name="lastName" id="lastName" type="text" >
+                    </p>
+                    
+                    <p>
+                        <label for="phone">Phone number:</label>
+                        <span id="phoneError" class="error">Please enter your phone number</span>
+                        <input name="phone" id="phone" type="tel">
+                    </p>
+
+                    <p>
+                        <label>Email:</label>
+                        <span id="emailError" class="error">Please enter your email address</span>
+                        <input name="email" id="email" type="email"> 
+                    </p>
+
+                    <fieldset>
+			            <legend>Preferred Method of Contact <span class="error" id="radiosError"> Please choose a contact option</span></legend>
+    
+
+
+                        <input type="radio" name="method" id="phoneMethod" value="phone">
+                        <label for="phoneMethod">Phone</label>
+                        
+                        <input type="radio" name="method" id="emailMethod" value="email">
+                        <label for="emailMethod">Email</label>
+                        
+                        
+
+                    </fieldset>
+
+                    <p>
+                        <label for="message">Message us<span class="required">*</span></label>
+                        <span id="messageError" class="error">Please enter a message below</span>
+                        <textarea id="message" name="message"></textarea>
+                    </p>
+  
+                    <p>
+                        <input type="submit" >	
+                        <span id="validInfo">Thank you! We'll be in touch soon!
+                        </span>
+                    </p> 
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <small>GIT 417 - 2025 Programmed by Tanisha Garner</small><br>
+                <small>For Educational purposes only</small><br>
+                <small>All inspiration credit goes to &copy; Legal Seafoods & PPX Hospitality</small><br>
+                <small>Follow Legal Seafoods on social Media </small>
+            </div>
+        </footer>
+    </body>
+</html>
