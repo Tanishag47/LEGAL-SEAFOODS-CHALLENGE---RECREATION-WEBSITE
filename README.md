@@ -5,11 +5,10 @@
 <h3>🦞 Inspiration for the Project</h3>
 <p>The goal of this project was to recreate the Legal Sea Foods website while exploring how an established restaurant brand presents its identity, menu, and dining experience. 
   
-  As a former Legal Seafoods server, one of my first web personal development projects came from something close to home. I studied the restaurants website, along side my own experience with the brand and I wanted to try to recreate it in my own way.</p><br>
+  As a former Legal Seafoods server, one of my first web personal development projects came from something close to home. I studied the restaurants website, along side my own experience with the brand and I wanted to try to recreate it in my own way.</p><br><br>
 
 ***
 
-<br>
 <h3>🚀 Project Features</h3>
 
   - **Restaurant History:** Short Description of the Legal Seafoods legacy and history behind todays storefront locations.
