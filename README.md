@@ -42,10 +42,24 @@
 ***
 
 <h3>💻 Website Preview</h3>
-<img src="assets/1.png" alt="" width="45%" align="left">
-<img src="assets/2.png" alt="" width="45%">
-<img src="assets/3.png" alt="" width="45%" align="left">
-<img src="assets/4.png" alt="" width="45%">
+<div>
+  <img src="LSF MOCK UPS/1.png" alt="" width="45%" align="left">
+  <p></p>
+
+  
+  <img src="LSF MOCK UPS/2.png" alt="" width="45%" >
+  <p>
+  </p>
+
+  <img src="LSF MOCK UPS/3.png" alt="" width="45%" align="left">
+  <p>
+  </p>
+
+  <img src="LSF MOCK UPS/4.png" alt="" width="45%">
+  <p>
+  </p>
+</div>
+
 
 ***
 
