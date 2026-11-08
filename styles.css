@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
-/* ------------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+------------------------------------------------------------------------ */
 /* HOME PAGE AND GLOBAL CSS SETTINGS */
 /* ------------------------------------------------------------------------ */
 
@@ -8,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 #container{
     max-width: 1280px;
     width: 100%;
@@ -15,18 +17,17 @@
 }
 
 header{
-	width: 100%;
-    height: 190px;
+	width: auto;
+    height: 120px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	padding: 1rem 10px;
     background-color:  #2B395E;
-    /*position: fixed;*/
 }
 
 #logo{
-    width: 10em;
+    width: 9em;
     height: auto;
     padding-top: 10px;
     padding-left: 20px;
@@ -42,7 +43,8 @@ header{
 
 
 /* NAVIGATION USING FLEXBOX*/
-nav > ul{
+nav > ul{  
+    font-family: "Noto Serif", serif;
     display: flex;
     justify-content: flex-end;
     list-style: none;
@@ -51,7 +53,7 @@ nav > ul{
     position: absolute; /* Positioning the ul */
     top: 5em; /* Aligning it to the top */
     /*right: 0; /* Aligning it to the right */
-    margin-left: 45em;
+    margin-left: 48em;
 }
 
 nav > li{
@@ -63,12 +65,22 @@ a{
     text-decoration: none;
     color: whitesmoke;
     padding: 15px;
-    font-size: 25px; /* Makes font size bigger in nav*/
+    font-size: 20px; /* Makes font size bigger in nav*/
 }
+
+nav a.active{
+    text-decoration: underline;
+    text-decoration-color: #ff4757;
+    text-underline-offset: 8px;   
+}
+
+
 li > a:hover{
-    background-color: whitesmoke;
-    color: #2B395E;
-    border-radius: 5px;
+    color: whitesmoke;
+    text-decoration: underline;
+    text-decoration-color: #ff4757;
+    text-underline-offset: 8px; 
+    transition: all 0.3s ease;
 }
 
 /* HEADINGS */
@@ -92,13 +104,116 @@ span{
 }
 
 /*SLOGAN AND HEADER IMAGE */
-#header_img{ 
+
+/* HERO SECTION */
+#hero_section{
     width: 100%;
+    margin: 0 auto;
+    min-height: 550px;
+    display: grid;
+    grid-template-columns: 48% 52%;
+    align-items: center;
+    background-color: #f8f5ef;
+    overflow: hidden;
+}
+
+/* Slogan */
+.hero_content{
+    padding: 40px;
+    position: relative;
+    z-index: 6; /*has a higher index so allows content to sit above wave*/
 }
 
 .slogan{
-    text-align: center;
-    font-size: 30px;
+    text-align: left;
+    font-size: clamp(45px, 5vw, 75px);
+    line-height: 1.05;
+    color: #29395e;
+    font-weight: bold;
+}
+
+.slogan span{
+    color: #e32626;
+}
+
+.hero_button{
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 35px;
+    border: 2px solid #29395e;
+
+    background-color: #fdfcea;
+    color: #29395e;
+
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.hero_button span{
+    margin-left: 12px;
+}
+
+.hero_button:hover {
+    background-color: #29395e;
+    color: whitesmoke;
+}
+
+/* Hero image */
+.hero_img{
+    height: 100%;
+    min-height: 550px;
+    position: relative;
+}
+
+#header_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Gradual fade into the text */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.25) 15%,
+        black 45%
+    );
+
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0, 0, 0, 0.25) 15%,
+        black 45%
+    );
+}
+
+#hero_section{
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    z-index: 4;
+    pointer-events: none;
+}
+
+.hero_wave img{
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    display: block;
 }
 
 
@@ -109,6 +224,7 @@ span{
 }
 
 .abouth2{
+   font-family: "Noto Serif", serif;
    display: block;
    background-color: white;
    color: #2B395E;
@@ -121,7 +237,12 @@ span{
     display: flex;
 }
 
+#sidebyside ul{
+    margin-right: 30px;
+}
+
 #sidebyside > ul > li{
+    font-family: "Noto Serif", serif;
     font-size: 25px;
     margin-top: 35px;
     margin-bottom: 25px;
@@ -134,6 +255,7 @@ span{
 /*CUISINE SECTION*/
 
 #cuisine{
+    font-family: "Noto Serif", serif;
     background-color: whitesmoke;
     color:#1b2b55;
     margin-top: 15px;
@@ -268,8 +390,10 @@ span{
     color: whitesmoke;
     padding: 20px 30px;
     border-radius: 10px;
+    font-family: "Noto Serif", serif;
     font-size: 16px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
@@ -280,6 +404,7 @@ span{
 /* GUESSING GAME STYLES */
 
 #game{
+    font-family: "Noto Serif", serif;
     background-color: #BD3039;
     padding-top: 30px;
     padding-bottom: 100px;
@@ -288,6 +413,7 @@ span{
 }
 
 #game > div{
+    margin-top: 50px;
     margin-left: 40px;
 }
 
@@ -306,7 +432,8 @@ span{
     color: white;
 }
 
-.howToPlay {
+.howToPlay{
+    text-align: center;
     margin-right: 50px;
     padding-top: 30px;
     padding-right: 30px;
@@ -333,7 +460,10 @@ span{
 }
 
 #guessNum{
+    display: block;
+    margin: 0 auto;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 .howToPlay > button[type="submit"]{
@@ -345,24 +475,35 @@ span{
 
 #submitButton{
     padding: 16px 28px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #2B395E;
     color: whitesmoke;  
-    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    transition: all 0.3s ease;
+    
+}
+
+#submitButton:hover{
+    background-color: whitesmoke;
+    color:#1b2b55;
+    cursor: pointer;
+    
 }
 
 #invalidNum, #winner, #loser{
     display: none;
+    text-align: center;
 }
 
 #randomNumGenerated{
+    text-align: center;
     color: #2B395E;
     border-radius: 10px;
-    background-color: whitesmoke;
+    
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
-    width: 50%; 
+    width: auto; 
 }
 
 /* ___________________________________________________________ */
@@ -377,6 +518,7 @@ span{
 }
 
 #formText{ /* for h2, h3, p, img*/
+    font-family: "Noto Serif", serif;
     text-align: center;
     color: #2B395E;
     padding-top: 40px;
@@ -401,7 +543,7 @@ span{
     width: 110px;
 }
 
-form {
+#form {
   border: 1px solid #2B395E;
   border-radius: 5px;
   color: #2B395E;
@@ -432,10 +574,10 @@ textarea {
 #validInfo{
     color: #2B395E;
     display: none;
-    padding-left: 50px;
+    padding-left: 80px;
 }
 
-label { /* label styles */
+label{ /* label styles */
   padding-bottom: 10px;
   color: #2B395E;
 }
@@ -466,12 +608,16 @@ textarea { /* comment box styles */
 }
 
 input[type=submit] { /* submit button styles */
+    font-family: "Noto Serif", serif;
 	background-color: #2B395E;
-    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 8px;
     font-size: 20px;
     color: whitesmoke;
 	padding-top: 1rem; 
     padding-bottom: 1rem;
+    margin-bottom: 30px;
 
 }
 

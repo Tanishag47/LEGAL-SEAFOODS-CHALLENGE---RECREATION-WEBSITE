@@ -21,9 +21,28 @@
                 </nav>
         </header>
         <main>
-            <section>
-                <h2 class="slogan">"IF IT ISN'T <span>FRESH...</span> IT ISN'T <span>LEGAL</span>"</h2>
-                <img id="header_img" src="./IMAGES/DISHES ON TABLE.jpg" alt="Photo of a variety of dishes served at legal seafoods">
+            <section id="hero_section">
+                <div class="hero_content">
+                    <h2 class="slogan">"IF IT ISN'T <span>FRESH...</span>
+                        <br>
+                        IT ISN'T <span>LEGAL</span>"
+                    </h2>
+
+                    <a href="#about" class="hero_button">
+                        OUR STORY <span>→</span>
+                    </a>
+                </div>
+                
+                <div class="hero_img">
+                    <img id="header_img" src="./IMAGES/lsf_dining-lobster.jpg" alt="Photo of a variety of dishes served at legal seafoods">
+                </div>   
+                
+                <div class="hero_wave">
+                    <img src="./IMAGES/layered-waves-haikei.svg" alt="">
+                </div>
+
+
+
             </section>
 
             <section id="about">
@@ -90,22 +109,22 @@
                     <img src="./IMAGES/LOBSTER ROLL.avif" alt="A new england traditional lobster roll">
                 </div>
                 
-
                 <div class="howToPlay">
-                    <p>HOW TO PLAY:</p>
+                    <p>How to play:</p>
                     <ol>
-                        <li>Enter a number between 1 & 10</li>
-                        <li>If your number matches the generated number, YOU WIN!</li>
+                        <li>Enter a number between 1 - 10</li>
+                        <li>If the number matches the generated number, YOU WIN!</li>
                     </ol>
 
                     
-                    <label>Choose Your Number: </label>
+                    <label>Choose a number: </label>
                     <input name="guessNum" id="guessNum">
-                    <button type="submit" id="submitButton">GUESS TO WIN!</button>
+                    <button type="submit" id="submitButton">Take a guess</button>
+
                     <p id="invalidNum">Please enter a number between 1 and 10</p>
                     <p id="randomNumGenerated"></p>
-                    <p id="winner">CONGRATS! YOU GET A FREE LOBSTER ROLL!</p>
-                    <p id="loser">Sorry the number doesnt match. Try again!</p>
+                    <p id="winner">CONGRATS! You get a FREE lobster roll!</p>
+                    <p id="loser">Try again.</p>
                 </div>
                 
             </section>
