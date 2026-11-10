@@ -1,3 +1,5 @@
+<h1>Legal Seafoods - Restaurant Remodel Challenge</h1>
+
 <img src="IMAGES/SERVING TABLE MARGOTH.jpg" align="left" width="50%">
 
 <h3></h3>
